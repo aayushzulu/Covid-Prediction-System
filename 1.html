@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .write {
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-size: xx-large;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 100px;
+
+        }
+
+        .write2 {
+            position: relative;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #b8b1b1;
+            padding-top: 40px;
+
+        }
+
+        .read-more button {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            border-radius: 40px;
+            background-color: #e1e9e6;
+            border: none;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .read-more {
+            text-align: center;
+            padding-top: 70px;
+        }
+
+        .banner-img {
+            background-image: url("h-heyerlein-ndja2LJ4IcM-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100%;
+            opacity: 0.9;
+        }
+
+        .navbar-toggler-icon {
+            color: white;
+        }
+
+        nav.navbar {
+            background: rgba(255, 255, 255, 0.116) !important;
+        }
+
+        .navbar-nav.navlink {
+            color: white;
+        }
+
+        .navbar-nav.active>.nav-link,
+        .navbar-nav.nav-link.active,
+        .navbar-nav.nav-link.show,
+        .navbar-nav.show>.nav-link {
+            color: white;
+        }
+
+        .dropdown-item {
+            color: rgb(253, 253, 253);
+        }
+
+        .dropdown-menu {
+            background: rgba(255, 255, 255, 0.123);
+        }
+
+        .navbar a {
+            color: white;
+        }
+
+        .btn {
+            color: white;
+            border-color: white;
+            font-family: 'Dancing Script', cursive;
+            font-size: x-large;
+        }
+
+        .navbar-brand {
+            font-family: 'Dancing Script', cursive;
+            font-size: x-large;
+        }
+
+        .nav-link {
+            font-family: 'Dancing Script', cursive;
+            font-size: large;
+        }
+
+        .form-control {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .about {
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+
+        }
+
+        .heading-about {
+            font-size: 50px;
+        }
+
+        .content-about {
+            padding-top: 30px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .story {
+            padding-top: 5%;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-img">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="Icon ionic-ios-menu.svg">
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">SERVICES <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            DROPDOWN
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="search-box">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Guys search..."
+                            aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><b>Search</b></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="write" data-aos="fade-right" data-aos-duration="1300">
+            <h1>THIS IS WHERE MACHINES<br>MEET INTELLIGENCE.</h1>
+
+        </div>
+        <div class="write2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <h5>
+                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Quidem eum a <br>esse mollitia ad
+                    perspiciatis
+                    culpa temporibus nesciunt.<br> Corrupti amet sequi minima voluptas nam unde<br> blanditiis quo
+                    doloremque
+                    deleniti quia!
+                </p>
+
+            </h5>
+        </div>
+        <div class="read-more" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1000">
+            <button>
+                <h4>READ MORE<h4>
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="about">
+        <div class="heading-about">
+            <b><u>ABOUT</u></b>
+        </div>
+        <div class="content-about">
+            <h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                    doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                    doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                    doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                    doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                    doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+                    doloribus aliquam possimus illo
+                    consequatur perferendis, nihil tempore molestiae quasi, iusto rerum delectus provident animi, esse
+                    incidunt minus cumque id consectetur!</p>
+            </h4>
+        </div>
+    </div>
+    <div class="story_slider">
+        <div class="story">
+            <h1><u>CORONAVIRUS RECOVERY STORIES AROUND THE WORLD</u></h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+document.getElementById("btn-1").addEventListener("mouseover", function () { document.getElementById("btn-1").style.backgroundColor = "#4CAF50" });
+document.getElementById("btn-1").addEventListener("mouseout", function () { document.getElementById("btn-1").style.backgroundColor = "teal" });

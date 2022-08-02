@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .banner-img {
+            background-image: url("login-signup background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100%;
+            opacity: 0.9;
+        }
+
+        .white-component {
+            position: absolute;
+            width: 67%;
+            height: 80%;
+            background-color: white;
+        }
+
+        .background {
+            padding-left: 25%;
+            padding-top: 7%;
+        }
+
+        .blue-component {
+            position: relative;
+            height: 100%;
+            width: 250px;
+            text-align: center;
+            color: white;
+        }
+
+        .create-account {
+            position: relative;
+            height: 100%;
+            width: auto;
+        }
+
+
+        .white-component {
+            display: flex;
+        }
+
+        .create-account h1 {
+            font-family: 'Nunito';
+            color: teal;
+        }
+
+
+        .icons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .google-icon {
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        .facebook-icon {
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        .linkedin-icon {
+            padding: 10px;
+            padding-top: 0;
+        }
+
+        .create-account-icons {
+            position: relative;
+            padding-left: 180px;
+            padding-top: 20%;
+        }
+
+        .write {
+            display: flex;
+            justify-content: center;
+        }
+
+        .write h4 {
+            color: rgb(110, 107, 107);
+        }
+
+        .name {
+            padding-top: 3%;
+            padding-bottom: 2%;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            background-color: rgb(240, 231, 231);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            color: rgb(88, 88, 88);
+            font-size: medium;
+        }
+
+        input::-webkit-input-placeholder {
+            color: rgb(102, 102, 102);
+        }
+
+        .name,
+        .email,
+        .password {
+            padding-bottom: 2%;
+            padding-left: 38%;
+        }
+
+        .password {
+            padding-bottom: 6%;
+        }
+
+        .signup-button {
+            padding-left: 54%;
+        }
+
+        .signup-button button {
+            width: 160px;
+            height: 50px;
+            border-radius: 40px;
+            border: none;
+            outline: none;
+            background-color: rgb(10, 116, 116);
+            font-size: large;
+            font-weight: bolder;
+            color: white;
+            cursor: pointer;
+        }
+
+        .welcome-back {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Nunito';
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .keep-connected {
+            position: absolute;
+            top: 46%;
+            left: 2%;
+            font-family: 'Nerko One', cursive;
+        }
+
+        .signin-button {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .signin-button button {
+            width: 160px;
+            height: 50px;
+            border-radius: 40px;
+            border-color: white;
+            outline: none;
+            background-color: transparent;
+            font-size: large;
+            font-weight: bolder;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-img">
+        <div class="background">
+            <div class="white-component">
+                <div class="blue-component">
+                    <img src="Blue-component1.jpg" height="100%" width="250px">
+                    <div class="welcome-back">WELCOME !</div>
+                    <div class="keep-connected">Enter your personal information and stay connected with us.</div>
+                    <div class="signin-button">
+                        <a href="login-signup1.html">
+                            <button>SIGN UP</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="create-account">
+                    <div class="create-account-icons">
+                        <h1>SIGN IN TO PORTAL</h1>
+                        <div class="icons">
+                            <div class="google-icon">
+                                <a href="#">
+                                    <img src="google icon.jpg" alt="" height="35" width="35">
+                                </a>
+                            </div>
+                            <div class="facebook-icon">
+                                <a href="#">
+                                    <img src="facebook icon.jpg" alt="" height="35" width="35">
+                                </a>
+                            </div>
+                            <div class="linkedin-icon">
+                                <a href="#">
+                                    <img src="linked in.jpg" alt="" height="35" width="35">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="write">
+                            <h4>or use your email account</h4>
+                        </div>
+
+                    </div>
+                    <form>
+                        <div class="email">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="password">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="signup-button">
+                            <a href="index.html">
+                                <button type="submit" id="btn-1">
+                                    SIGN IN
+                                </button>
+                            </a>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="login-signup2.js"></script>
+
+</html>

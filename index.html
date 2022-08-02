@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- JS, Popper.js, and jQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        #home {
+            background-image: url("h-heyerlein-ndja2LJ4IcM-unsplash.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100%;
+            opacity: 0.9;
+        }
+
+        .nav {
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.116);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            font-family: 'Times New Roman', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+
+        .nav>div {
+            padding-left: 20px;
+        }
+
+        .write {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            font-size: xx-large;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 160px;
+
+        }
+
+        .write2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #b8b1b1;
+            padding-top: 40px;
+
+        }
+
+        .read-more button {
+            padding-top: 15px;
+            padding-bottom: 10px;
+            border-radius: 40px;
+            background-color: #13c081;
+            border: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            outline: none;
+        }
+
+        .read-more {
+            text-align: center;
+            padding-top: 70px;
+        }
+
+        .menu {
+            padding-top: 13px;
+            padding-bottom: 12px;
+            padding-left: 10px;
+            justify-self: start;
+
+        }
+
+        .menu button {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+        }
+
+        .home {
+            color: white;
+
+            padding-top: 17px;
+        }
+
+        .covid-stories {
+            color: white;
+
+            padding-top: 17px;
+        }
+
+        .about {
+            color: white;
+
+            padding-top: 17px;
+        }
+
+        .dashboard {
+            color: white;
+
+            padding-top: 17px;
+        }
+
+
+
+        .btn {
+            color: white;
+            border-color: white;
+
+        }
+
+        .nav a {
+            color: white;
+        }
+
+        .search-box {
+            position: absolute;
+            right: 20px;
+            padding-top: 8px;
+        }
+
+        .text-box input {
+            outline: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 5px;
+            height: 38px;
+            width: 200px;
+            border: 0.5px solid #ffffff;
+            padding-top: 5px;
+            padding-left: 10px;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.123);
+        }
+
+        .text-box input::-webkit-input-placeholder {
+            font-size: 20px;
+            vertical-align: top;
+            color: white;
+        }
+
+        .search-box button {
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ffffff;
+            font-size: x-large;
+            font-weight: bolder;
+            color: white;
+            background-color: transparent;
+            cursor: vertical-text;
+            width: 80px;
+            height: 45px;
+        }
+
+        .About {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 40px;
+            font-size: 50px;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        .about-content {
+            padding-top: 2%;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-family: 'Texturina', serif;
+        }
+
+        .wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            overflow-x: hidden;
+            height: 100vh;
+        }
+
+        .slide1 {
+            background-image: url('slide1-image.jpg');
+        }
+
+        .slide2 {
+            background-image: url("slide2-image.jpg");
+        }
+
+        .slide3 {
+            background-image: url("slide3-image.jpg");
+        }
+
+        .slide4 {
+            background-image: url("slide4-image.jpg");
+        }
+
+        #about {
+            background: rgb(42, 42, 42);
+        }
+
+        .slide-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 19%;
+        }
+
+        .slide-content span {
+            font-size: 3rem;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section id="home">
+        <div class="banner-img">
+            <div class="nav">
+                <div class="menu">
+                    <button id="btn-1">
+                        <img src="Icon ionic-ios-menu.svg">
+                    </button>
+                </div>
+                <div class="home">
+                    <a href="#home">
+                        <h5>HOME</h5>
+                    </a>
+                </div>
+                <div class="about">
+                    <a href="#about">
+                        <h5>ABOUT</h5>
+                    </a>
+                </div>
+                <div class="covid-stories">
+
+                    <a href="#covid-stories">
+                        <h5>COVID-STORIES</h5>
+                    </a>
+                </div>
+                <div class="dashboard">
+                    <a href="#">
+                        <h5>DASHBOARD</h5>
+                    </a>
+                </div>
+                <div class="search-box">
+                    <form>
+                        <div class="text-box">
+                            <input type="text" placeholder="Search...">
+                            <button id="btn-2" type="submit">Search</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="write" data-aos="fade-right" data-aos-duration="1300">
+                <h1>EARLY WARNING <br>PREDICTION SYSTEM</h1>
+
+            </div>
+
+            <div class="write2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <h5>
+                    <p>Enter your present symptoms to check the presence of COVID disease or not.
+                        <br>Don't Worry, we got your back!</br>
+                </h5>
+            </div>
+            <div class="read-more" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1000">
+                <button id="btn-3">
+                    <h4>Let's Go<h4>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="particles.min.js"></script>
+    <div id="about" class="particles-js-canvas-el">
+        <div id="particles-js">
+            <canvas class="particles-js-canvas-el" width="771" height="386" style="width: 100%; height: 100%;"></canvas>
+        </div>
+        <div class="About">
+            ABOUT
+        </div>
+        <div class="about-content">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                vero
+                placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                officia
+                sed eum. Quod?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                vero
+                placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                officia
+                sed eum. Quod?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                vero
+                placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                officia
+                sed eum. Quod?</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                vero
+                placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                officia
+                sed eum. Quod?</p>
+            <br><br><br>
+        </div>
+    </div>
+
+    <div class="wrap" id="covid-stories">
+        <div class="arrow" id="arrow-left"></div>
+        <div id="slider">
+            <div class="slide slide1">
+                <div class="slide-content">
+                    <span>Image1</span>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="slide-content">
+                    <span>Image2</span>
+                </div>
+            </div>
+            <div class="slide slide3">
+                <div class="slide-content">
+                    <span>Image3</span>
+                </div>
+            </div>
+            <div class="slide slide4">
+                <div class="slide-content">
+                    <span>Image4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script src="index.js"></script>
+
+</html>
